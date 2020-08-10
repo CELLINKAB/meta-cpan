@@ -24,3 +24,9 @@ S = "${WORKDIR}/ExtUtils-ParseXS-${PV}"
 inherit cpan allarch
 
 BBCLASSEXTEND = "native"
+
+
+
+do_install() {
+   rm ${WORKDIR}/xsubpp
+}
